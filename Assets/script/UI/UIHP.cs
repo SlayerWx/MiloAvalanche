@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class UIHP : MonoBehaviour
 {
     public TMP_Text text;
-
     private void OnEnable()
     {
         Life.OnChangeHP +=ChangeHP;
