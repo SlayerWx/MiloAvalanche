@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     public GameObject DeadLayer;
     private void OnEnable()
     {
-        Life.OnChangeHP -= ChangeHP;
+        Life.OnChangeHP += ChangeHP;
     }
     private void OnDisable()
     {
@@ -29,7 +29,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator EndGame()
     {
         Time.timeScale = 0.0f;
-        yield return new WaitForSeconds(viewWaitToCoverPlayer);
+        yield return new WaitForSecondsRealtime(viewWaitToCoverPlayer);
         DeadLayer.SetActive(true);
     }
 }

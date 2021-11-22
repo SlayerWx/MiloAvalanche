@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigid: {fileID: 6147353669944009433}
-  speed: 300
+  speed: 600
   axisMinMobileLimitSensitivity: 0.1
   MobileSensitivityMultiply: 1.7
 --- !u!114 &514020789
