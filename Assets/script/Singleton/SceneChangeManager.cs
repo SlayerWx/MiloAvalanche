@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class SceneChangeManager : MonoBehaviour
 {
     public static string nextScene = "Menu";
-    public static string fromScene = "Game";
+    public static string fromScene = "Menu";
 
     public static void SceneChange(string next)
     {
