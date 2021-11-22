@@ -8,6 +8,7 @@ public class ObjectPool : MonoBehaviour
     public List<GameObject> pooledObjects;
     public GameObject objectToPool;
     public int amountToPool;
+    public float substractToScale = 2.0f;
     void Awake()
     {
         SharedInstance = this;
@@ -19,6 +20,8 @@ public class ObjectPool : MonoBehaviour
         for(int i = 0; i < amountToPool;i++)
         {
             aux = Instantiate(objectToPool);
+
+            aux.transform.localScale = Vector3.one * (Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, 0, 0)).x / substractToScale);
             aux.SetActive(false);
             pooledObjects.Add(aux);
         }
