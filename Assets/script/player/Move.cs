@@ -33,6 +33,6 @@ public class Move : MonoBehaviour
         {
             horizontal = Input.GetAxis("Horizontal");
         }
-        myRigid.velocity = new Vector2(horizontal * speed, myRigid.velocity.y);
+        myRigid.velocity = new Vector2((horizontal * speed) * Time.deltaTime, myRigid.velocity.y);
     }
 }
