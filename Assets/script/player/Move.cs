@@ -6,6 +6,8 @@ public class Move : MonoBehaviour
 {
     public Rigidbody2D myRigid;
     public float speed;
+    public float axisMinMobileLimitSensitivity = 0.2f;
+    public float MobileSensitivityMultiply = 1.5f;
     void Start()
     {
         
@@ -24,7 +26,12 @@ public class Move : MonoBehaviour
     }
     private void AccelMove()
     {
-
+        float horizontal = 0;
+        if(Input.acceleration.x > axisMinMobileLimitSensitivity || Input.acceleration.x < -axisMinMobileLimitSensitivity)
+        {
+            horizontal = Input.acceleration.x * MobileSensitivityMultiply;
+        }
+        myRigid.velocity = new Vector2((horizontal * speed) * Time.deltaTime, myRigid.velocity.y);
     }
     private void Movement()
     {
