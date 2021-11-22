@@ -33,10 +33,14 @@ public class LoadAsync : MonoBehaviour
         }
         slider.value = 1.0f;
         yield return new WaitForSeconds(waitToAppearButton);
-        bar.SetActive(false);
-        button.SetActive(true);
-        yield return null;
-        yield return new WaitUntil(() => buttonInput);
+
+        if (SceneChangeManager.waitToButtonStart)
+        {
+            bar.SetActive(false);
+            button.SetActive(true);
+            yield return null;
+            yield return new WaitUntil(() => buttonInput);
+        }
         SceneChangeManager.fromScene = SceneChangeManager.nextScene;
         asyncLoad.allowSceneActivation = true;
     }
