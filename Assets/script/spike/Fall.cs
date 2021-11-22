@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fall : MonoBehaviour
 {
     public float speed;
+    public float endYPos;
     void Update()
     {
         Falling();
@@ -12,6 +13,7 @@ public class Fall : MonoBehaviour
     void Falling()
     {
         transform.position += (Vector3.down * speed) * Time.deltaTime;
+        if (transform.position.y < endYPos) gameObject.SetActive(false);
     }
 }
 
