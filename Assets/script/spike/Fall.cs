@@ -7,6 +7,12 @@ public class Fall : MonoBehaviour
     public float speed;
     public float endYPos;
     public static Action OnSpikeEnd;
+    public SpriteRenderer sprite;
+    private void OnEnable()
+    {
+        
+        sprite.flipX = (UnityEngine.Random.Range(0, 2) == 1);
+    }
     void Update()
     {
         Falling();
