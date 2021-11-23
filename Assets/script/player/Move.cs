@@ -43,17 +43,23 @@ public class Move : MonoBehaviour
         if(Input.acceleration.x > axisMinMobileLimitSensitivity || Input.acceleration.x < -axisMinMobileLimitSensitivity)
         {
             horizontal = Input.acceleration.x * MobileSensitivityMultiply;
-            if (!AnimationController.GetEqualAnim(AnimationController.Animations.Run))
+            if ((leftLimit < transform.position.x && horizontal <= 0) || (rightLimit > transform.position.x && horizontal >= 0))
             {
-                AnimationController.SetState(AnimationController.Animations.Run);
+                if (!AnimationController.GetEqualAnim(AnimationController.Animations.Run))
+                {
+                    AnimationController.SetState(AnimationController.Animations.Run);
+                }
+                flipSprite(Input.acceleration.x);
             }
-            flipSprite(Input.acceleration.x);
+            else
+            {
+                horizontal = 0;
+            }
         }
         else if(!AnimationController.GetEqualAnim(AnimationController.Animations.Idle))
         {
             AnimationController.SetState(AnimationController.Animations.Idle);
         }
-        if((leftLimit < transform.position.x && horizontal < 0) || (rightLimit > transform.position.x && horizontal > 0))
         myRigid.velocity = new Vector2((horizontal * speed) * Time.deltaTime, myRigid.velocity.y);
     }
 #endif
