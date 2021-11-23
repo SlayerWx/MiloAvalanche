@@ -9,9 +9,14 @@ public class Move : MonoBehaviour
     public float axisMinMobileLimitSensitivity = 0.2f;
     public float MobileSensitivityMultiply = 1.5f;
     public SpriteRenderer bodyS;
+    float leftLimit;
+    float rightLimit;
     void Start()
     {
         AnimationController.SetState(AnimationController.Animations.Idle);
+
+        leftLimit = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
+        rightLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x;
     }
 
     void Update()
@@ -48,6 +53,7 @@ public class Move : MonoBehaviour
         {
             AnimationController.SetState(AnimationController.Animations.Idle);
         }
+        if((leftLimit < transform.position.x && horizontal < 0) || (rightLimit > transform.position.x && horizontal > 0))
         myRigid.velocity = new Vector2((horizontal * speed) * Time.deltaTime, myRigid.velocity.y);
     }
 #endif
@@ -58,12 +64,19 @@ public class Move : MonoBehaviour
         float horizontal = 0;
         if(Input.GetAxisRaw("Horizontal") != 0)
         {
-           horizontal = Input.GetAxis("Horizontal"); 
-            if (!AnimationController.GetEqualAnim(AnimationController.Animations.Run))
+           horizontal = Input.GetAxis("Horizontal");
+            if ((leftLimit < transform.position.x && horizontal <= 0) || (rightLimit > transform.position.x && horizontal >= 0))
             {
-                AnimationController.SetState(AnimationController.Animations.Run);
+                if (!AnimationController.GetEqualAnim(AnimationController.Animations.Run))
+                {
+                    AnimationController.SetState(AnimationController.Animations.Run);
+                }
+                flipSprite(Input.GetAxis("Horizontal"));
             }
-            flipSprite(Input.GetAxis("Horizontal"));
+            else
+            {
+                horizontal = 0;
+            }
         }
         else if (!AnimationController.GetEqualAnim(AnimationController.Animations.Idle))
         {
