@@ -17,6 +17,7 @@ public class Life : MonoBehaviour
         SetHP(initialHP);
         canHurt = true;
         isAlive = true;
+        OnChangeHP?.Invoke(hp, isAlive,0);
     }
 
 
