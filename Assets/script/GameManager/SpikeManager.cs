@@ -7,6 +7,8 @@ public class SpikeManager : MonoBehaviour
     public float maxTimeToRandom;
     bool waiting;
     float screenWidth;
+    float cutDivideLimitTime = 0.01f;
+    float substractNotPercent = 0.999f; // 784 points max diff moment , 0.25 points for spike end
     void Start()
     {
         screenWidth = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth,0,0)).x;
@@ -23,7 +25,8 @@ public class SpikeManager : MonoBehaviour
     {
         waiting = true;
         yield return new WaitForSeconds(normalTimeToSpawn + Random.Range(0.0f, maxTimeToRandom));
-
+        if(maxTimeToRandom > cutDivideLimitTime) maxTimeToRandom *= substractNotPercent;
+        if(normalTimeToSpawn > cutDivideLimitTime) normalTimeToSpawn *= substractNotPercent;
         GameObject Spike = ObjectPool.SharedInstance.GetPooledObject();
         if(Spike != null)
         {

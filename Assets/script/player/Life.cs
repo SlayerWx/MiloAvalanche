@@ -25,7 +25,7 @@ public class Life : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy") && canHurt)
         {
-            SetHP(hp - 1);
+            //SetHP(hp - 1);
             if (hp > 0)
             {
                 AnimationController.SetState(AnimationController.Animations.Hurt);
