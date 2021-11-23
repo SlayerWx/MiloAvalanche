@@ -31,17 +31,18 @@ public class LevelManager : MonoBehaviour
         Points += PointsForSpike;
         uiPoints.text.text = ((int)Points).ToString();
     }
-    void ChangeHP(int newHP)
+    void ChangeHP(int newHP,bool isAlive,float time)
     {
-        if(newHP <= 0)
+        if(!isAlive)
         {
-            StartCoroutine(EndGame());
+            StartCoroutine(EndGame(time));
         }
     }
-    IEnumerator EndGame()
+    IEnumerator EndGame(float time)
     {
+        yield return new WaitForSecondsRealtime(time);
         Time.timeScale = 0.0f;
-        yield return new WaitForSecondsRealtime(viewWaitToCoverPlayer);
+        //yield return new WaitForSecondsRealtime(viewWaitToCoverPlayer);
         DeadLayer.SetActive(true);
     }
 }

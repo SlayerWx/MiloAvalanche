@@ -15,7 +15,7 @@ public class UIHP : MonoBehaviour
 
         Life.OnChangeHP -=ChangeHP;
     }
-    void ChangeHP(int newHP)
+    void ChangeHP(int newHP,bool isAlive, float time)
     {
         text.text = newHP.ToString();
     }

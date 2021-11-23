@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 9d5c6583323a2ed4bb2cda45e3f1db8b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6732267772496612848
+    second: DogTile_0
+  - first:
+      213: -3500932096086171329
+    second: DogTile_1
+  - first:
+      213: 1801365196502144785
+    second: DogTile_2
+  - first:
+      213: 5216202438807833742
+    second: DogTile_3
+  - first:
+      213: -4868050211501113039
+    second: DogTile_4
+  - first:
+      213: -1644736956496656879
+    second: DogTile_5
+  - first:
+      213: 624287794373636041
+    second: DogTile_6
+  - first:
+      213: -1192441218005282073
+    second: DogTile_7
+  - first:
+      213: -3260150509924458431
+    second: DogTile_8
+  - first:
+      213: -643940720214410641
+    second: DogTile_9
+  - first:
+      213: -5484738756968817847
+    second: DogTile_10
+  - first:
+      213: 8684366948479183935
+    second: DogTile_11
+  - first:
+      213: -8591989420077569042
+    second: DogTile_12
+  - first:
+      213: -3797157792589490293
+    second: DogTile_13
+  - first:
+      213: -6551385447693207642
+    second: DogTile_14
+  - first:
+      213: -1293707845637279018
+    second: DogTile_15
+  - first:
+      213: 8546268266030574046
+    second: DogTile_16
+  - first:
+      213: -4434617888434686622
+    second: DogTile_17
+  - first:
+      213: 7452690782127051934
+    second: DogTile_18
+  - first:
+      213: 289726061935175901
+    second: DogTile_19
+  - first:
+      213: -5432691472948151062
+    second: DogTile_20
+  - first:
+      213: 83139769077947806
+    second: DogTile_21
+  - first:
+      213: -7966546313529379253
+    second: DogTile_22
+  - first:
+      213: 5930790741577750559
+    second: DogTile_23
+  - first:
+      213: 8777401401264600496
+    second: DogTile_24
+  - first:
+      213: 8205173260463089754
+    second: DogTile_25
+  - first:
+      213: 1041422576804802818
+    second: DogTile_26
+  - first:
+      213: -7584643215887107201
+    second: DogTile_27
+  - first:
+      213: 3160300231931379560
+    second: DogTile_28
+  - first:
+      213: -6087959822337832701
+    second: DogTile_29
+  - first:
+      213: -1431651677225154343
+    second: DogTile_30
+  - first:
+      213: -2538878049366545498
+    second: DogTile_31
+  - first:
+      213: -6290304094977069196
+    second: DogTile_32
+  - first:
+      213: 4525908410987398455
+    second: DogTile_33
+  - first:
+      213: -2591422269549039766
+    second: DogTile_34
+  - first:
+      213: -5470087323974341582
+    second: DogTile_35
+  - first:
+      213: -269056372177112667
+    second: DogTile_36
+  - first:
+      213: -501495516316275512
+    second: DogTile_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 270
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DogTile_0
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1764
+        width: 294
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0127787412e2292a0800000000000000
+      internalID: -6732267772496612848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_1
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1757
+        width: 296
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31250eaec03a6fc0800000000000000
+      internalID: -3500932096086171329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_2
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1762
+        width: 297
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11713482a1cbff810800000000000000
+      internalID: 1801365196502144785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_3
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 1748
+        width: 296
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ccaa14b7ca36840800000000000000
+      internalID: 5216202438807833742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_4
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 1748
+        width: 296
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13106baef16317cb0800000000000000
+      internalID: -4868050211501113039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_5
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 1741
+        width: 297
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1164f07c378bc29e0800000000000000
+      internalID: -1644736956496656879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_6
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 1741
+        width: 296
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cfa04df07ae9a800800000000000000
+      internalID: 624287794373636041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_7
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1734
+        width: 296
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2d241b709937fe0800000000000000
+      internalID: -1192441218005282073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_8
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 1725
+        width: 296
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140e4ad526e91c2d0800000000000000
+      internalID: -3260150509924458431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_9
+      rect:
+        serializedVersion: 2
+        x: 4003
+        y: 1720
+        width: 296
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6af533a3534017f0800000000000000
+      internalID: -643940720214410641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_10
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1235
+        width: 296
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b5e01f82b42e3b0800000000000000
+      internalID: -5484738756968817847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_11
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1237
+        width: 296
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cae375ab1158870800000000000000
+      internalID: 8684366948479183935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_12
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 1264
+        width: 297
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebac5e052f13c880800000000000000
+      internalID: -8591989420077569042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_13
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1242
+        width: 297
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87d8981b19cd4bc0800000000000000
+      internalID: -3797157792589490293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_14
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 1244
+        width: 296
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7359365adc415a0800000000000000
+      internalID: -6551385447693207642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_15
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 1233
+        width: 296
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d277a99193db0ee0800000000000000
+      internalID: -1293707845637279018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_16
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 1237
+        width: 296
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed922f735b17a9670800000000000000
+      internalID: 8546268266030574046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_17
+      rect:
+        serializedVersion: 2
+        x: 3149
+        y: 1233
+        width: 296
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265f14da6821572c0800000000000000
+      internalID: -4434617888434686622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 685
+        width: 340
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94d281c7c64d6760800000000000000
+      internalID: 7452690782127051934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_19
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 673
+        width: 329
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8a1db7150550400800000000000000
+      internalID: 289726061935175901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_20
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 672
+        width: 350
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecb1a493e33b94b0800000000000000
+      internalID: -5432691472948151062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_21
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 680
+        width: 378
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d5992fd2f572100800000000000000
+      internalID: 83139769077947806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_22
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 692
+        width: 359
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46326f1654217190800000000000000
+      internalID: -7966546313529379253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_23
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 708
+        width: 357
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18daecb1c66e4250800000000000000
+      internalID: 5930790741577750559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_24
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 689
+        width: 362
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5746dd1189fc970800000000000000
+      internalID: 8777401401264600496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_25
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 703
+        width: 346
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58af668b91aed170800000000000000
+      internalID: 8205173260463089754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_26
+      rect:
+        serializedVersion: 2
+        x: 3833
+        y: 680
+        width: 354
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201b58fd050e37e00800000000000000
+      internalID: 1041422576804802818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_27
+      rect:
+        serializedVersion: 2
+        x: 4305
+        y: 659
+        width: 342
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bf8f82e2fedb690800000000000000
+      internalID: -7584643215887107201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_28
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 160
+        width: 340
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fbad32154abdb20800000000000000
+      internalID: 3160300231931379560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_29
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 118
+        width: 335
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30904b60cc8338ba0800000000000000
+      internalID: -6087959822337832701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_30
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 109
+        width: 376
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d807e08260c12ce0800000000000000
+      internalID: -1431651677225154343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_31
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 87
+        width: 378
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab687b9dd714ccd0800000000000000
+      internalID: -2538878049366545498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_32
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 122
+        width: 420
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fe4b9c0c954b8a0800000000000000
+      internalID: -6290304094977069196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_33
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 108
+        width: 411
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7354bd278b14fce30800000000000000
+      internalID: 4525908410987398455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_34
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 148
+        width: 402
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f2e700d2b690cd0800000000000000
+      internalID: -2591422269549039766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_35
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 125
+        width: 401
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c64248f885614b0800000000000000
+      internalID: -5470087323974341582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_36
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 115
+        width: 403
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1f3dfa7ae144cf0800000000000000
+      internalID: -269056372177112667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogTile_37
+      rect:
+        serializedVersion: 2
+        x: 4306
+        y: 104
+        width: 404
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc64852c745a09f0800000000000000
+      internalID: -501495516316275512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
