@@ -6,7 +6,6 @@ public class LevelManager : MonoBehaviour
 {
     public float Points = 0;
     public float PointsForSpike = 0.25f;
-    public float viewWaitToCoverPlayer;
     public GameObject DeadLayer;
     public UIPoints uiPoints;
     private void OnEnable()
@@ -42,7 +41,6 @@ public class LevelManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(time);
         Time.timeScale = 0.0f;
-        //yield return new WaitForSecondsRealtime(viewWaitToCoverPlayer);
         DeadLayer.SetActive(true);
     }
 }

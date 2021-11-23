@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6732267772496612848, guid: 9d5c6583323a2ed4bb2cda45e3f1db8b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialHP: 3
   invulnerabilityTime: 0.5
-  deadAnimTime: 0.73
+  deadAnimTime: 0.69
   hurtANimTime: 0.75
 --- !u!114 &1411732364433837591
 MonoBehaviour:
