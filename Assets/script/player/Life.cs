@@ -12,6 +12,7 @@ public class Life : MonoBehaviour
     public float hurtANimTime;
     bool canHurt;
     public static bool isAlive;
+    public ParticleSystem blood;
     void Start()
     {
         SetHP(initialHP);
@@ -25,7 +26,8 @@ public class Life : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy") && canHurt)
         {
-            //SetHP(hp - 1);
+            SetHP(hp - 1);
+            blood.Play();
             if (hp > 0)
             {
                 AnimationController.SetState(AnimationController.Animations.Hurt);
