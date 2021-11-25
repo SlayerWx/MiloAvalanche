@@ -21,7 +21,7 @@ public class Move : MonoBehaviour
 
     void Update()
     {
-        if (!AnimationController.GetTriggeredBool())
+        if (!AnimationController.GetTriggeredBool() )
         {
 #if UNITY_ANDROID
             AccelMove();
@@ -93,10 +93,13 @@ public class Move : MonoBehaviour
 #endif
     void flipSprite(float aux)
     {
-        if (aux > 0)
-            bodyS.flipX = false;
-        else
-            bodyS.flipX = true;
+        if (Life.isAlive)
+        {
+            if (aux > 0)
+                bodyS.flipX = false;
+            else
+                bodyS.flipX = true;
+        }
 
     }
 }
