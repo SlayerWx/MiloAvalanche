@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class SpikeManager : MonoBehaviour
 {
     public float normalTimeToSpawn;
@@ -27,11 +28,13 @@ public class SpikeManager : MonoBehaviour
         yield return new WaitForSeconds(normalTimeToSpawn + Random.Range(0.0f, maxTimeToRandom));
         if(maxTimeToRandom > cutDivideLimitTime) maxTimeToRandom *= substractNotPercent;
         if(normalTimeToSpawn > cutDivideLimitTime) normalTimeToSpawn *= substractNotPercent;
-        GameObject Spike = ObjectPool.SharedInstance.GetPooledObject();
-        if(Spike != null)
+        GMandEnem Spike = ObjectPool.SharedInstance.GetPooledObject();
+        if(Spike.GM != null)
         {
-            Spike.transform.position = new Vector3(Random.Range(-screenWidth, screenWidth),transform.position.y, 0);
-            Spike.SetActive(true);
+            Spike.GM.transform.position = new Vector3(Random.Range(-screenWidth, screenWidth),transform.position.y, 0);
+            Spike.GM.SetActive(true);
+            Spike.BE.OnEnable(Spike.GM);
+
         }
         waiting = false;
     }

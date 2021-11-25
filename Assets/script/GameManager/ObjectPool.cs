@@ -1,7 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public struct GMandEnem
+{
+    public GameObject GM;
+    public BaseEnemy BE;
+        
+};
 public class ObjectPool : MonoBehaviour
 {
     public static ObjectPool SharedInstance;
@@ -9,6 +14,8 @@ public class ObjectPool : MonoBehaviour
     public GameObject objectToPool;
     public int amountToPool;
     public float substractToScale = 2.0f;
+    private List<SpikeTypeController> baseEnemyComponents; //toHelpFactory
+    public FactorySpike factorySpike;
     void Awake()
     {
         SharedInstance = this;
@@ -16,25 +23,35 @@ public class ObjectPool : MonoBehaviour
     void Start()
     {
         pooledObjects = new List<GameObject>();
+        baseEnemyComponents = new List<SpikeTypeController>();
         GameObject aux;
         for(int i = 0; i < amountToPool;i++)
         {
             aux = Instantiate(objectToPool);
-
             aux.transform.localScale = Vector3.one * (Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, 0, 0)).x / substractToScale);
             aux.SetActive(false);
             pooledObjects.Add(aux);
+            SpikeTypeController aux2 = aux.GetComponent<SpikeTypeController>();
+            aux2.myBaseEnemy = factorySpike.NewSpike();
+            baseEnemyComponents.Add(aux2);
         }
     }
-    public GameObject GetPooledObject()
+    public GMandEnem GetPooledObject()
     {
-        for(int i = 0; i <amountToPool; i++)
+        GMandEnem aux;
+        for (int i = 0; i <amountToPool; i++)
         {
             if(!pooledObjects[i].activeInHierarchy)
             {
-                return pooledObjects[i];
+                baseEnemyComponents[i].myBaseEnemy = factorySpike.NewSpike();
+                baseEnemyComponents[i].TheOnEnable();
+                aux.GM = pooledObjects[i];
+                aux.BE = baseEnemyComponents[i].myBaseEnemy;
+                return aux;
             }
         }
-        return null;
+        aux.GM = null;
+        aux.BE = null;
+        return aux;
     }
 }

@@ -11,12 +11,12 @@ public class LevelManager : MonoBehaviour
     private void OnEnable()
     {
         Life.OnChangeHP += ChangeHP;
-        Fall.OnSpikeEnd += AddPoints;
+        BaseEnemy.OnSpikeEnd += AddPoints;
     }
     private void OnDisable()
     {
         Life.OnChangeHP -= ChangeHP;
-        Fall.OnSpikeEnd -= AddPoints;
+        BaseEnemy.OnSpikeEnd -= AddPoints;
     }
     void Start()
     {
