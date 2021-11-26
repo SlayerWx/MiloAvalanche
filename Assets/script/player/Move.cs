@@ -11,12 +11,19 @@ public class Move : MonoBehaviour
     public SpriteRenderer bodyS;
     float leftLimit;
     float rightLimit;
+    public GameObject b;
+    public GameObject a;
+    public GameObject c;
     void Start()
     {
         AnimationController.SetState(AnimationController.Animations.Idle);
 
         leftLimit = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
+        a = Instantiate(b, new Vector3(leftLimit, 5, 0), Quaternion.identity,null);
+
         rightLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x;
+
+        c = Instantiate(b, new Vector3(rightLimit,5,0), Quaternion.identity, null);
     }
 
     void Update()
@@ -101,5 +108,12 @@ public class Move : MonoBehaviour
                 bodyS.flipX = true;
         }
 
+    }
+    protected void OnGUI()
+    {
+        GUI.skin.label.fontSize = Screen.width / 40;
+
+        GUILayout.Label("LeftLimit: " + a.transform.position.x);
+        GUILayout.Label("rightLimit: " + c.transform.position.x);
     }
 }
