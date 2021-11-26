@@ -39,6 +39,7 @@ public class LevelManager : MonoBehaviour
     }
     IEnumerator EndGame(float time)
     {
+        CharacterInfo.myref.points = Points;
         yield return new WaitForSecondsRealtime(time);
         Time.timeScale = 0.0f;
         DeadLayer.SetActive(true);

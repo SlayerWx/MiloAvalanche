@@ -13,6 +13,7 @@ public class Life : MonoBehaviour
     bool canHurt;
     public static bool isAlive;
     public ParticleSystem blood;
+    public AudioSource hurt;
     void Start()
     {
         SetHP(initialHP);
@@ -28,6 +29,7 @@ public class Life : MonoBehaviour
         {
             SetHP(hp - 1);
             blood.Play();
+            hurt.Play();
             if (hp > 0)
             {
                 AnimationController.SetState(AnimationController.Animations.Hurt);

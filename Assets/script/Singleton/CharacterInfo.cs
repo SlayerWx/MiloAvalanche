@@ -11,19 +11,13 @@ public class CharacterInfo : MonoBehaviour
     public static Action OnInitScene;
     public static CharacterInfo myref = null;
     public float points;
-    public bool haveCat;
     public CharacterType actualCharacterType;
-    void Start()
+    void Awake()
     {
-        if (this != myref && myref)
-            Destroy(this);
-        else if (myref)
-            OnInitScene?.Invoke();
-        else
-        {
+        if (!myref)
             myref = this;
-            OnInitScene?.Invoke();
-        }
+        else
+            Destroy(this);
     }
 
     

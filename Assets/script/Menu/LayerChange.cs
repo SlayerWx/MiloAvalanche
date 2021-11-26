@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class LayerChange : MonoBehaviour
 {
-    public GameObject ThisLayer;
+    public GameObject thisLayer;
+    public GameObject nextLayer;
     public void ShowLayer()
     {
-        ThisLayer.SetActive(true);
+        thisLayer.SetActive(true);
     }
     public void HideLayer()
     {
-        ThisLayer.SetActive(false);
+        thisLayer.SetActive(false);
     }
 }
