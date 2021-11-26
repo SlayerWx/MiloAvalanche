@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: b6fe86fabf83684469b62d984f806e05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4511384095181400125
+    second: CatTile_0
+  - first:
+      213: -1582560637514678164
+    second: CatTile_1
+  - first:
+      213: -4565055870173766908
+    second: CatTile_2
+  - first:
+      213: -7522752441483857041
+    second: CatTile_3
+  - first:
+      213: -8551626950632118644
+    second: CatTile_4
+  - first:
+      213: -678136558472548041
+    second: CatTile_5
+  - first:
+      213: 6718467205154608152
+    second: CatTile_6
+  - first:
+      213: -3634277217237641540
+    second: CatTile_7
+  - first:
+      213: 8117959119751016885
+    second: CatTile_8
+  - first:
+      213: -2552522341010252116
+    second: CatTile_9
+  - first:
+      213: 2948083128739433924
+    second: CatTile_10
+  - first:
+      213: -7518854131552199350
+    second: CatTile_11
+  - first:
+      213: -4822180425337118250
+    second: CatTile_12
+  - first:
+      213: 5483131845154593511
+    second: CatTile_13
+  - first:
+      213: -1513437803928248085
+    second: CatTile_14
+  - first:
+      213: 6628958843660696043
+    second: CatTile_15
+  - first:
+      213: -4153145626950701919
+    second: CatTile_16
+  - first:
+      213: -7464030517885205392
+    second: CatTile_17
+  - first:
+      213: -4990413582689555509
+    second: CatTile_18
+  - first:
+      213: -8167689465122453720
+    second: CatTile_19
+  - first:
+      213: -2655484631805346709
+    second: CatTile_20
+  - first:
+      213: 2816065597983001346
+    second: CatTile_21
+  - first:
+      213: 6716754767663667764
+    second: CatTile_22
+  - first:
+      213: 5161359309551767660
+    second: CatTile_23
+  - first:
+      213: -630950338308997769
+    second: CatTile_24
+  - first:
+      213: 3210917355616599387
+    second: CatTile_25
+  - first:
+      213: 7128796012058316015
+    second: CatTile_26
+  - first:
+      213: -7170207283717073891
+    second: CatTile_27
+  - first:
+      213: -4924451679583861049
+    second: CatTile_28
+  - first:
+      213: 5717710155621335121
+    second: CatTile_29
+  - first:
+      213: -9155382866691010014
+    second: CatTile_30
+  - first:
+      213: -1843051161671679710
+    second: CatTile_31
+  - first:
+      213: 2757885558186382037
+    second: CatTile_32
+  - first:
+      213: -198910207546229407
+    second: CatTile_33
+  - first:
+      213: -4754358124802380124
+    second: CatTile_34
+  - first:
+      213: -1991830638178596440
+    second: CatTile_35
+  - first:
+      213: -7511145466570899444
+    second: CatTile_36
+  - first:
+      213: -67216324954915668
+    second: CatTile_37
+  - first:
+      213: -2708698507048838394
+    second: CatTile_38
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 270
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CatTile_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1748
+        width: 292
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3862a6aee7ab9e30800000000000000
+      internalID: 4511384095181400125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1734
+        width: 290
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c600c652c7d990ae0800000000000000
+      internalID: -1582560637514678164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_2
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1734
+        width: 292
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b1b7e6fd9a5a0c0800000000000000
+      internalID: -4565055870173766908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_3
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1730
+        width: 292
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63f6200380d99790800000000000000
+      internalID: -7522752441483857041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_4
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1726
+        width: 290
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c866aebc894825980800000000000000
+      internalID: -8551626950632118644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_5
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 1730
+        width: 290
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731b90b9466c696f0800000000000000
+      internalID: -678136558472548041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_6
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1726
+        width: 292
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8141a5eb35acc3d50800000000000000
+      internalID: 6718467205154608152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_7
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1722
+        width: 292
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6514b4024709dc0800000000000000
+      internalID: -3634277217237641540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_8
+      rect:
+        serializedVersion: 2
+        x: 2907
+        y: 1708
+        width: 292
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1f6e10fc8c8a070800000000000000
+      internalID: 8117959119751016885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_9
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 1710
+        width: 290
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caed5d6647e939cd0800000000000000
+      internalID: -2552522341010252116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_10
+      rect:
+        serializedVersion: 2
+        x: 3691
+        y: 1716
+        width: 292
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd06d86cf1b9e820800000000000000
+      internalID: 2948083128739433924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1206
+        width: 296
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d5ad2010aa7a790800000000000000
+      internalID: -7518854131552199350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_12
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1220
+        width: 296
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d160f0c37c241db0800000000000000
+      internalID: -4822180425337118250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_13
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1218
+        width: 290
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea521fbc5ff71c40800000000000000
+      internalID: 5483131845154593511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_14
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1176
+        width: 296
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0a53bf5503ffae0800000000000000
+      internalID: -1513437803928248085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_15
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1190
+        width: 294
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9741352facefb50800000000000000
+      internalID: 6628958843660696043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_16
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 1171
+        width: 294
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ace22d7e001d56c0800000000000000
+      internalID: -4153145626950701919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_17
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1173
+        width: 290
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07407c44acf6a6890800000000000000
+      internalID: -7464030517885205392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_18
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 1151
+        width: 294
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb2181794d7ebab0800000000000000
+      internalID: -4990413582689555509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_19
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 1180
+        width: 369
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8270daba4b986ae80800000000000000
+      internalID: -8167689465122453720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_20
+      rect:
+        serializedVersion: 2
+        x: 3515
+        y: 1113
+        width: 346
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cbbb6fbc2d52bd0800000000000000
+      internalID: -2655484631805346709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_21
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 709
+        width: 322
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b89ffbdbca41720800000000000000
+      internalID: 2816065597983001346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_22
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 679
+        width: 318
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a1102dfd4b63d50800000000000000
+      internalID: 6716754767663667764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_23
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 641
+        width: 354
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c601dfb22f4d0a740800000000000000
+      internalID: 5161359309551767660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_24
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 649
+        width: 384
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dfd2e920a6e37f0800000000000000
+      internalID: -630950338308997769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_25
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 661
+        width: 378
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5df9a0a2587f8c20800000000000000
+      internalID: 3210917355616599387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_26
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 658
+        width: 380
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec05f6f3329ee260800000000000000
+      internalID: 7128796012058316015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_27
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 684
+        width: 388
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d141020077e4e7c90800000000000000
+      internalID: -7170207283717073891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_28
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 711
+        width: 364
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c604dcc945d8abb0800000000000000
+      internalID: -4924451679583861049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_29
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 635
+        width: 390
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1500472c713695f40800000000000000
+      internalID: 5717710155621335121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_30
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 83
+        width: 322
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2225f204acb81f080800000000000000
+      internalID: -9155382866691010014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_31
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 75
+        width: 338
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22140bdbbba2c66e0800000000000000
+      internalID: -1843051161671679710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_32
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 55
+        width: 383
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d211e2ad4af54620800000000000000
+      internalID: 2757885558186382037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_33
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 75
+        width: 378
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16df10958345d3df0800000000000000
+      internalID: -198910207546229407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_34
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 103
+        width: 410
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae6924a970250eb0800000000000000
+      internalID: -4754358124802380124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_35
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 109
+        width: 398
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a900a676989b54e0800000000000000
+      internalID: -1991830638178596440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_36
+      rect:
+        serializedVersion: 2
+        x: 2775
+        y: 107
+        width: 388
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0081c07efc03c790800000000000000
+      internalID: -7511145466570899444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_37
+      rect:
+        serializedVersion: 2
+        x: 3197
+        y: 75
+        width: 388
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac74fbcb13311ff0800000000000000
+      internalID: -67216324954915668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatTile_38
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 129
+        width: 390
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b19b32f05c86ad0800000000000000
+      internalID: -2708698507048838394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

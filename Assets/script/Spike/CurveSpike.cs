@@ -20,7 +20,6 @@ public class CurveSpike : BaseEnemy
     {
         float aux = (Mathf.Sin(Vector3.Distance(GM.transform.position, Vector3.down * endYPos) / maxDistance)
             * Vector3.Distance(GM.transform.position, Vector3.down * endYPos) * closeCurveForMulty) * xOrientation;
-        Debug.Log(maxDistance);
         Vector3 nextPos;
         nextPos = GM.transform.position + new Vector3(aux, -speed) * Time.deltaTime;
         nextPos = (GM.transform.position - nextPos).normalized;
