@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Move : MonoBehaviour
 {
     public Rigidbody2D myRigid;
@@ -11,6 +11,7 @@ public class Move : MonoBehaviour
     public SpriteRenderer bodyS;
     float leftLimit;
     float rightLimit;
+    bool StartWorking = false;
     void Start()
     {
         AnimationController.SetState(AnimationController.Animations.Idle);
@@ -18,11 +19,20 @@ public class Move : MonoBehaviour
         leftLimit = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
 
         rightLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x;
-
+        StartWorking = true;
     }
 
     void Update()
     {
+        if(!StartWorking)
+        {
+            AnimationController.SetState(AnimationController.Animations.Idle);
+
+            leftLimit = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
+
+            rightLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x;
+            StartWorking = true;
+        }
         if (!AnimationController.GetTriggeredBool() )
         {
 #if UNITY_ANDROID
@@ -103,12 +113,5 @@ public class Move : MonoBehaviour
                 bodyS.flipX = true;
         }
 
-    }
-    protected void OnGUI()
-    {
-        GUI.skin.label.fontSize = Screen.width / 40;
-
-        GUILayout.Label("LeftLimit: " + Camera.main.ViewportToWorldPoint(Vector3.zero).x);
-        GUILayout.Label("rightLimit: " + Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x);
     }
 }
