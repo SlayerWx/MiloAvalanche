@@ -14,4 +14,16 @@ public class LayerChange : MonoBehaviour
     {
         thisLayer.SetActive(false);
     }
+    public void Pause()
+    {
+        thisLayer.SetActive(false);
+        Time.timeScale = 0.0f;
+        nextLayer.SetActive(true);
+    }
+    public void UnPause()
+    {
+        thisLayer.SetActive(true);
+        Time.timeScale = 1.0f;
+        nextLayer.SetActive(false);
+    }
 }
