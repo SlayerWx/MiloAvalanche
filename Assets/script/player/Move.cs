@@ -35,7 +35,7 @@ public class Move : MonoBehaviour
         }
         if (!AnimationController.GetTriggeredBool() )
         {
-#if UNITY_ANDROID
+#if PLATFORM_ANDROID
             AccelMove();
 #endif
             //#if UNITY_STANDALONE_WIN
@@ -48,7 +48,7 @@ public class Move : MonoBehaviour
             myRigid.velocity = new Vector2(0, myRigid.velocity.y);
         }
     }
-#if UNITY_ANDROID
+#if PLATFORM_ANDROID
     private void AccelMove()
     {
         float horizontal = 0;
