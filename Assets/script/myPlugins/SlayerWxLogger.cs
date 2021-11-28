@@ -1,48 +1,68 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// conseguir main activity de unity para hacer la alerta a la hora de borrar el archivo
-// cuidado donde esta corriendo el activity, en que entorno esta corriendo hara de que dependa como guardar el archivo
-public class SlayerWxLogger
+public class SlayerWxLogger : MonoBehaviour
 {
-#if PLATFORM_ANDROID
+#if PLATFORM_ANDROID && !UNITY_EDITOR
     const string PACK_NAME = "com.slayerwx.slayerwxlogger";
     const string LOGGER_CLASS_NAME = "SLogger";
-    public int count = 0;
     AndroidJavaClass SLoggerClass = null;
     AndroidJavaObject SLoggerOBJ = null;
     AndroidJavaObject activity = null;
-    AndroidJavaObject jList = null;
+#endif
+    public static SlayerWxLogger instance = null;
+    public void Awake()
+    {
+        if(instance == null)
+        instance = this;
+    }
     
     private void InitPlugin()
     {
+#if PLATFORM_ANDROID && !UNITY_EDITOR
         SLoggerClass = new AndroidJavaClass(PACK_NAME + "." + LOGGER_CLASS_NAME);
         SLoggerOBJ = SLoggerClass.CallStatic<AndroidJavaObject>("GetInstance");
         AndroidJavaClass unityJClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         activity = unityJClass.GetStatic<AndroidJavaObject>("currentActivity");
-        jList = new AndroidJavaClass("java.util.ArrayList");
-
+#endif
     }
     public void Init()
     {
+#if PLATFORM_ANDROID && !UNITY_EDITOR
         if (SLoggerOBJ == null)
+        {
             InitPlugin();
-        SLoggerOBJ.Call("CreateDayLogger",activity);
+            SLoggerOBJ.Call("CreateDayLogger", activity);
+        }
+#endif
     }
     public void Wirte(string data)
     {
-        if(SLoggerOBJ != null)
-        SLoggerOBJ.Call("WriteFile", data);
+#if PLATFORM_ANDROID && !UNITY_EDITOR
+        if (SLoggerOBJ != null)
+        {
+            SLoggerOBJ.Call("WriteFile", data);
+        }
+#endif
     }
     public string[] Read()
     {
         string[] a = null;
+#if PLATFORM_ANDROID && !UNITY_EDITOR
         if (SLoggerOBJ != null)
         {
             a = SLoggerOBJ.Call<string[]>("ReadFile");
         }
-        count = a.Length;
+#endif
         return a;
     }
+    public void Delete()
+    {
+#if PLATFORM_ANDROID && !UNITY_EDITOR
+        if (SLoggerOBJ != null)
+        {
+            SLoggerOBJ.Call<string[]>("DeleteLog");
+        }
 #endif
+    }
 }

@@ -7,14 +7,25 @@ public class CharacterUnlockManager : MonoBehaviour
     public float catChallenge;
     public Button canHasCat;
     public Image catSprite;
-    private void Start()
-    {
-    }
+    public PluginManager PM;
+
     void OnEnable()
     {
-        if(CharacterInfo.myref.points >= catChallenge)
+        CheckCatChallenge();
+        if(PM)
+        PM.WirteLog();
+    }
+    public void CheckCatChallenge()
+    {
+        if (CharacterInfo.myref.points >= catChallenge)
         {
-            canHasCat.interactable = true;
+            PlayGames.Instance.UnlockAchievement();
         }
+        if(PlayGames.Instance)
+        canHasCat.interactable = PlayGames.Instance.GetSuccessArchivment();
+    }
+    public void CheckCatChallengeInteract()
+    {
+        canHasCat.interactable = PlayGames.Instance.GetSuccessArchivment();
     }
 }

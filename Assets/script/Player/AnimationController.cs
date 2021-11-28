@@ -9,7 +9,7 @@ public class AnimationController : MonoBehaviour
         Idle,Run,Hurt,Dead
     };
     public static Animator myAnim;
-    void Start()
+    void Awake()
     {
         myAnim = GetComponent<Animator>();
         

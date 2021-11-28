@@ -9,7 +9,7 @@ public class CharacterManager : MonoBehaviour
     public Animator anim;
     public UIHP uihp;
 
-    void Start()
+    void OnEnable()
     {
         SetCharacter();
     }

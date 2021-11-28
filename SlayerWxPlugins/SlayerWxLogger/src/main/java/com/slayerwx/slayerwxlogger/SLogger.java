@@ -1,6 +1,7 @@
 package com.slayerwx.slayerwxlogger;
 import android.app.Activity;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.View;
@@ -26,33 +27,16 @@ public class SLogger {
         return _instance;
     }
     private Activity unityActivity = null;
-    private File LogFile = null;
-    EditText myEditText;
     public void CreateDayLogger(Activity a)
     {
         Log.d("SLogger-CreateDayLogger", "Create Init");
         try {
             unityActivity = a;
             Log.d("SLogger-CreateDayLogger", "TrySuccess");
-            CreateFile();
 
         }catch (NullPointerException e){
             Log.d("SLogger-CreateDayLogger", "null pointer exception, GetApplicationContext from Unity Activity");
             //e.printStackTrace();
-        }
-    }
-    public void CreateFile()
-    {
-        Log.d("SLogger-CreateFile", "CreateFile");
-        try {
-            //if (LogFile==null)
-               // LogFile = new File(unityActivity.getApplicationContext().getFilesDir(), LogName);
-            //File
-            Log.d("SLogger-CreateFile", "TrySuccess");
-        }catch (NullPointerException e)
-        {
-            Log.d("SLogger-CreateFile", "null pointer exception, failed to Create File");
-
         }
     }
 
@@ -60,41 +44,59 @@ public class SLogger {
         try {
           //  if(LogFile.exists()) {
                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(unityActivity.getApplicationContext().openFileOutput(LogName, unityActivity.getApplicationContext().MODE_APPEND));
-                outputStreamWriter.write(data);
+                outputStreamWriter.write(data + "\n");
                 outputStreamWriter.close();
-            Log.e("SLogger-WriteFile", "Write Success ");
+            Log.d("SLogger-WriteFile", "Write Success, data: " + data);
             //}
         }
         catch (IOException e) {
-            Log.e("SLogger-WriteFile", "File write failed: " + e.toString());
+            Log.d("SLogger-WriteFile", "File write failed: " + e.toString());
         }
     }
     public String[] ReadFile() {
         List<String> linesList = new ArrayList<String>();
         try {
-           // if(LogFile.exists()) {
-                FileInputStream fileIn = unityActivity.openFileInput(LogName);
-                InputStreamReader inputRead = new InputStreamReader(fileIn);
-                BufferedReader br = new BufferedReader(inputRead);
-                String line = br.readLine();
-                while(line !=null)
-                {
-                    linesList.add(line);
 
-                    Log.e("SLogger-WriteFile", "Read: " + line.toString());
-                    line = br.readLine();
-                }
-                inputRead.close();
+                FileInputStream fileIn = null;
+                fileIn = unityActivity.openFileInput(LogName);
+             if(fileIn != null) {
+                 InputStreamReader inputRead = new InputStreamReader(fileIn);
+                 BufferedReader br = new BufferedReader(inputRead);
+                 String line = br.readLine();
+                 while (line != null) {
+                     linesList.add(line);
 
-            Log.e("SLogger-WriteFile", "Read success ");
+                     Log.d("SLogger-WriteFile", "Read: " + line.toString());
+                     line = br.readLine();
+                 }
+                 inputRead.close();
+             }
+            Log.d("SLogger-WriteFile", "Read success ");
             //}
 
         }
         catch (IOException e) {
-            Log.e("SLogger-WriteFile", "File Read failed: " + e.toString());
+            Log.d("SLogger-WriteFile", "File Read failed: " + e.toString());
         }
         String[] aux = new String[linesList.size()];
         aux = linesList.toArray(aux);
         return aux;
+    }
+    public void Debug(String data)
+    {
+        Log.d("LOG =>",data);
+    }
+    public void DeleteLog()
+    {
+        //File a = new File(unityActivity.getApplicationContext().getFilesDir(), LogName);
+        //Log.d("SLogger-DeleteLog", "test name" + a.getName());
+        //if(a.exists()) {
+        //    a.delete();
+        //}
+        //Log.d("SLogger-DeleteLog", "Delete " + LogName + " in " + unityActivity.getApplicationContext().getFilesDir());
+            Log.d("SLogger-DeleteLog","Trying Delete: " + unityActivity.getApplicationContext().getFilesDir() + LogName);
+            unityActivity.getContentResolver().delete(Uri.parse(unityActivity.getApplicationContext().getFilesDir() + LogName),null,null);
+            Log.d("SLogger-DeleteLog","Delete End");
+
     }
 }

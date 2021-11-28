@@ -4,30 +4,36 @@ using UnityEngine;
 using TMPro;
 public class PluginManager : MonoBehaviour
 {
-    SlayerWxLogger SLogger = new SlayerWxLogger();
     public TMP_Text LogText;
-    int i = 0;
+    public ScrollEnlarge scrollEnlarge;
+    
     private void Start()
     {
-        i = 0;
-        SLogger.Init();
+        SlayerWxLogger.instance.Init();
     }
-    public void Write()
+    public void WirteLog()
     {
-        i++;
-        SLogger.Wirte(i.ToString());
+        SlayerWxLogger.instance.Wirte(System.DateTime.Now.Month + " M/" + System.DateTime.Now.Day + " D/" 
+            + System.DateTime.Now.Year + " Y/" + System.DateTime.Now.Hour + ":"+ System.DateTime.Now.Minute + 
+            " T/- " +  (int)CharacterInfo.myref.points + " Points");
     }
     public void ReadLog()
     {
+        LogText.text = "";
         string[] aux;
-        aux = SLogger.Read();
-        foreach (string n in aux)
+        aux = SlayerWxLogger.instance.Read();
+        if (aux != null)
         {
-            LogText.text += n + "\n";
+            foreach (string n in aux)
+            {
+                LogText.text += n + "\n";
+            }
+            scrollEnlarge.ChangeHeight();
         }
     }
-    public void Test()
+    public void DeleteLog()
     {
-        LogText.text = " "+ SLogger.count + " ";
+        LogText.text = "";
+        SlayerWxLogger.instance.Delete();
     }
 }

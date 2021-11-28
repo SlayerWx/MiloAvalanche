@@ -11,7 +11,7 @@ public class Move : MonoBehaviour
     public SpriteRenderer bodyS;
     float leftLimit;
     float rightLimit;
-    bool StartWorking = false;
+   // bool StartWorking = false;
     void Start()
     {
         AnimationController.SetState(AnimationController.Animations.Idle);
@@ -19,27 +19,26 @@ public class Move : MonoBehaviour
         leftLimit = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
 
         rightLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x;
-        StartWorking = true;
+       // StartWorking = true;
     }
 
     void Update()
     {
-        if(!StartWorking)
-        {
-            AnimationController.SetState(AnimationController.Animations.Idle);
-
-            leftLimit = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
-
-            rightLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x;
-            StartWorking = true;
-        }
+        //if(!StartWorking)
+        //{
+        //    AnimationController.SetState(AnimationController.Animations.Idle);
+        //
+        //    leftLimit = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
+        //
+        //    rightLimit = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0)).x;
+        //    StartWorking = true;
+        //}
         if (!AnimationController.GetTriggeredBool() )
         {
-#if PLATFORM_ANDROID
+#if PLATFORM_ANDROID && !UNITY_EDITOR
             AccelMove();
 #endif
-            //#if UNITY_STANDALONE_WIN
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
             Movement();
 #endif
         }
@@ -48,7 +47,7 @@ public class Move : MonoBehaviour
             myRigid.velocity = new Vector2(0, myRigid.velocity.y);
         }
     }
-#if PLATFORM_ANDROID
+#if PLATFORM_ANDROID && !UNITY_EDITOR
     private void AccelMove()
     {
         float horizontal = 0;
@@ -75,8 +74,7 @@ public class Move : MonoBehaviour
         myRigid.velocity = new Vector2((horizontal * speed) * Time.deltaTime, myRigid.velocity.y);
     }
 #endif
-//#if UNITY_STANDALONE_WIN
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
     private void Movement()
     {
         float horizontal = 0;

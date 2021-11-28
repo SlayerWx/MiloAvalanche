@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     public float PointsForSpike = 0.25f;
     public GameObject DeadLayer;
     public UIPoints uiPoints;
+    public int pointsToUnlock = 250;
     private void OnEnable()
     {
         Life.OnChangeHP += ChangeHP;
@@ -43,5 +44,16 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(time);
         Time.timeScale = 0.0f;
         DeadLayer.SetActive(true);
+    }
+    public void SavePoints()
+    {
+
+        if(Points >= pointsToUnlock)
+        {
+            SlayerWxLogger.instance.Wirte(System.DateTime.Now.Month + " M/" + System.DateTime.Now.Day + " D/"
+            + System.DateTime.Now.Year + " Y/" + System.DateTime.Now.Hour + ":" + System.DateTime.Now.Minute +
+            " T/- " + (int)Points + " Points");
+            PlayGames.Instance.UnlockAchievement();
+        }
     }
 }
