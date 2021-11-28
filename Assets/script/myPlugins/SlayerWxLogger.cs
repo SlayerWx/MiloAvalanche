@@ -8,22 +8,41 @@ public class SlayerWxLogger
 #if PLATFORM_ANDROID
     const string PACK_NAME = "com.slayerwx.slayerwxlogger";
     const string LOGGER_CLASS_NAME = "SLogger";
+    public int count = 0;
     AndroidJavaClass SLoggerClass = null;
     AndroidJavaObject SLoggerOBJ = null;
     AndroidJavaObject activity = null;
-    void Init()
+    AndroidJavaObject jList = null;
+    
+    private void InitPlugin()
     {
         SLoggerClass = new AndroidJavaClass(PACK_NAME + "." + LOGGER_CLASS_NAME);
         SLoggerOBJ = SLoggerClass.CallStatic<AndroidJavaObject>("GetInstance");
         AndroidJavaClass unityJClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         activity = unityJClass.GetStatic<AndroidJavaObject>("currentActivity");
+        jList = new AndroidJavaClass("java.util.ArrayList");
 
     }
-    //public void SendLog(string smg)
-    //{
-    //    if (SLoggerOBJ == null)
-    //        Init();
-    //    SLoggerOBJ.Call("SendLog",smg);
-    //}
+    public void Init()
+    {
+        if (SLoggerOBJ == null)
+            InitPlugin();
+        SLoggerOBJ.Call("CreateDayLogger",activity);
+    }
+    public void Wirte(string data)
+    {
+        if(SLoggerOBJ != null)
+        SLoggerOBJ.Call("WriteFile", data);
+    }
+    public string[] Read()
+    {
+        string[] a = null;
+        if (SLoggerOBJ != null)
+        {
+            a = SLoggerOBJ.Call<string[]>("ReadFile");
+        }
+        count = a.Length;
+        return a;
+    }
 #endif
 }
