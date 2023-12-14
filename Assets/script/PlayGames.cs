@@ -8,12 +8,12 @@ public class PlayGames : MonoBehaviour
     public int playerScore;
     string leaderboardID = "";
     string achievementID = "CgkI5e37wqAKEAIQAQ";
-    public static PlayGamesPlatform platform;
-    public static PlayGames Instance;
+    public static PlayGamesPlatform platform = null;
+    public static PlayGames Instance = null;
     bool ChallengeComplet = false;
     private void Awake()
     {
-        if(Instance)
+        if(Instance == null)
         {
             Instance = this;
         }
@@ -23,6 +23,7 @@ public class PlayGames : MonoBehaviour
             PlayGamesPlatform.InitializeInstance(config);
             PlayGamesPlatform.DebugLogEnabled = true;
             platform = PlayGamesPlatform.Activate();
+			// Ejemplo de solicitud de permisos en tiempo de ejecución en Unity
         }
 
         Social.Active.localUser.Authenticate(success =>
@@ -37,7 +38,8 @@ public class PlayGames : MonoBehaviour
                 Debug.Log("Login Failed");
             }
         });
-    }
+		
+	}
 
     public void AddScoreToLeaderboard()
     {

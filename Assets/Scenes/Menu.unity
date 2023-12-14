@@ -6289,7 +6289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b7aeaf60672ac9479a32da33f672de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catChallenge: 250
+  catChallenge: 5
   canHasCat: {fileID: 324475447}
   catSprite: {fileID: 324475444}
   PM: {fileID: 2134114674}
@@ -6305,7 +6305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0a6bab21e5826498cdb703e9e29bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LogText: {fileID: 1004196600}
+  LogText: {fileID: 21975699}
   scrollEnlarge: {fileID: 1169351257}
 --- !u!1 &2144074343
 GameObject:

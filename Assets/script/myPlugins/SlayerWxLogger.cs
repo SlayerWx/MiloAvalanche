@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 public class SlayerWxLogger : MonoBehaviour
 {
 #if PLATFORM_ANDROID && !UNITY_EDITOR
@@ -24,6 +25,14 @@ public class SlayerWxLogger : MonoBehaviour
         SLoggerOBJ = SLoggerClass.CallStatic<AndroidJavaObject>("GetInstance");
         AndroidJavaClass unityJClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         activity = unityJClass.GetStatic<AndroidJavaObject>("currentActivity");
+		
+		
+		if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
+		{
+			
+			Permission.RequestUserPermission(Permission.ExternalStorageWrite);
+		}
+		
 #endif
     }
     public void Init()
@@ -32,6 +41,7 @@ public class SlayerWxLogger : MonoBehaviour
         if (SLoggerOBJ == null)
         {
             InitPlugin();
+			if(Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
             SLoggerOBJ.Call("CreateDayLogger", activity);
         }
 #endif
@@ -41,6 +51,7 @@ public class SlayerWxLogger : MonoBehaviour
 #if PLATFORM_ANDROID && !UNITY_EDITOR
         if (SLoggerOBJ != null)
         {
+			if(Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
             SLoggerOBJ.Call("WriteFile", data);
         }
 #endif
@@ -51,6 +62,7 @@ public class SlayerWxLogger : MonoBehaviour
 #if PLATFORM_ANDROID && !UNITY_EDITOR
         if (SLoggerOBJ != null)
         {
+			if(Permission.HasUserAuthorizedPermission(Permission.ExternalStorageRead))
             a = SLoggerOBJ.Call<string[]>("ReadFile");
         }
 #endif
@@ -61,6 +73,7 @@ public class SlayerWxLogger : MonoBehaviour
 #if PLATFORM_ANDROID && !UNITY_EDITOR
         if (SLoggerOBJ != null)
         {
+			if(Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
             SLoggerOBJ.Call<string[]>("DeleteLog");
         }
 #endif
